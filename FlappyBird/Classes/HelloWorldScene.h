@@ -3,13 +3,22 @@
 
 #include "cocos2d.h"
 #include <Box2D/Box2D.h>
-#include "B2Sprite.h"
-class HelloWorld : public cocos2d::Layer
+
+USING_NS_CC;
+
+#define RATIO 48.0
+class HelloWorld : public cocos2d::Layer,public b2ContactListener
 {
 private:
+    void startGame(float dt);
+    void stopGame();
+    
     void addbird();
     void initWorld();
-    Size visibleSize;
+    void addGround();
+    void addGesture();
+    void addbarsContainer();
+    void addBars(float dt);
 public:
     // there's no 'id' in cpp, so we recommend returning the class instance pointer
     static cocos2d::Scene* createScene();
@@ -25,9 +34,15 @@ public:
     
     virtual void update(float dt);
     
+    virtual void BeginContact(b2Contact* contact);
+    
+    Size visibleSize;
     b2World *world;
-   
-    B2Sprite *bird;
+    Sprite *bird;
+    Sprite *ground;
+    Sprite *barsContainer;
+    
+    
 };
 
 #endif // __HELLOWORLD_SCENE_H__

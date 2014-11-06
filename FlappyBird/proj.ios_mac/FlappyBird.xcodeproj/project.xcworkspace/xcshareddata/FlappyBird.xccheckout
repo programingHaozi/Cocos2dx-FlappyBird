@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>A44C889F-A077-4AE3-9BCC-4BFE0087C22F</string>
+	<key>IDESourceControlProjectName</key>
+	<string>FlappyBird</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>D1C7853BC21BB56D8B2443407955E29AAA5423DE</key>
+		<string>https://github.com/programingHaozi/Cocos2dx-FlappyBird.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>FlappyBird/proj.ios_mac/FlappyBird.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>D1C7853BC21BB56D8B2443407955E29AAA5423DE</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/programingHaozi/Cocos2dx-FlappyBird.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>D1C7853BC21BB56D8B2443407955E29AAA5423DE</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>D1C7853BC21BB56D8B2443407955E29AAA5423DE</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Cocos2dx-FlappyBird</string>
+		</dict>
+	</array>
+</dict>
+</plist>

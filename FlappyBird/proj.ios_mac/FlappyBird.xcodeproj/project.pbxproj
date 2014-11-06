@@ -64,7 +64,6 @@
 		871F551A1A08B60900FC1A75 /* HelloWorld.png in Resources */ = {isa = PBXBuildFile; fileRef = 871F550B1A08B60900FC1A75 /* HelloWorld.png */; };
 		871F551B1A08B60900FC1A75 /* up_bar.png in Resources */ = {isa = PBXBuildFile; fileRef = 871F550C1A08B60900FC1A75 /* up_bar.png */; };
 		871F551C1A08B60900FC1A75 /* up_bar.png in Resources */ = {isa = PBXBuildFile; fileRef = 871F550C1A08B60900FC1A75 /* up_bar.png */; };
-		87FBA9891A08BBE400C0A6B2 /* B2Sprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 87FBA9871A08BBE400C0A6B2 /* B2Sprite.cpp */; };
 		A26E47D3A498AB0ADAC85CF9 /* res in Resources */ = {isa = PBXBuildFile; fileRef = 435C40AC8DC8098A3DFD0FE0 /* res */; };
 		AD9F4042A3BB98273BCD18C0 /* res in Resources */ = {isa = PBXBuildFile; fileRef = 435C40AC8DC8098A3DFD0FE0 /* res */; };
 		BF171245129291EC00B8313A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB012928DE900B8313A /* OpenGLES.framework */; };
@@ -132,8 +131,6 @@
 		871F550A1A08B60900FC1A75 /* ground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ground.png; sourceTree = "<group>"; };
 		871F550B1A08B60900FC1A75 /* HelloWorld.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HelloWorld.png; sourceTree = "<group>"; };
 		871F550C1A08B60900FC1A75 /* up_bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = up_bar.png; sourceTree = "<group>"; };
-		87FBA9871A08BBE400C0A6B2 /* B2Sprite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = B2Sprite.cpp; sourceTree = "<group>"; };
-		87FBA9881A08BBE400C0A6B2 /* B2Sprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = B2Sprite.h; sourceTree = "<group>"; };
 		BF170DB012928DE900B8313A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		BF170DB412928DE900B8313A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		BF1C47EA1293683800B63C5D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -248,8 +245,6 @@
 			isa = PBXGroup;
 			children = (
 				871F55031A08B60900FC1A75 /* resources */,
-				87FBA9871A08BBE400C0A6B2 /* B2Sprite.cpp */,
-				87FBA9881A08BBE400C0A6B2 /* B2Sprite.h */,
 				46880B8419C43A87006E1F66 /* AppDelegate.cpp */,
 				46880B8519C43A87006E1F66 /* AppDelegate.h */,
 				46880B8619C43A87006E1F66 /* HelloWorldScene.cpp */,
@@ -476,7 +471,6 @@
 			files = (
 				46880B8819C43A87006E1F66 /* AppDelegate.cpp in Sources */,
 				46880B8A19C43A87006E1F66 /* HelloWorldScene.cpp in Sources */,
-				87FBA9891A08BBE400C0A6B2 /* B2Sprite.cpp in Sources */,
 				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,
 				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,
 				503AE10117EB989F00D1A890 /* main.m in Sources */,
@@ -522,7 +516,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LIBRARY_SEARCH_PATHS = " /Applications/Cocos/frameworks/cocos2d-x/prebuilt/ios";
 				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				USER_HEADER_SEARCH_PATHS = "";
 				VALID_ARCHS = "arm64 armv7";
 			};
@@ -552,7 +546,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LIBRARY_SEARCH_PATHS = " /Applications/Cocos/frameworks/cocos2d-x/prebuilt/ios";
 				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				USER_HEADER_SEARCH_PATHS = "";
 				VALID_ARCHS = "arm64 armv7";
 			};
