@@ -494,7 +494,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: xiaochuan zhou (63ZHPEL54J)";
 				COMPRESS_PNG_FILES = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
@@ -513,8 +513,9 @@
 					"/Applications/Cocos/frameworks/cocos2d-x/cocos/platform/ios/Simulation",
 				);
 				INFOPLIST_FILE = ios/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				LIBRARY_SEARCH_PATHS = " /Applications/Cocos/frameworks/cocos2d-x/prebuilt/ios";
+				"PROVISIONING_PROFILE[sdk=*]" = "6c9174a9-522a-4907-933c-20c495ea1ece";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 1;
 				USER_HEADER_SEARCH_PATHS = "";
@@ -543,7 +544,7 @@
 					"/Applications/Cocos/frameworks/cocos2d-x/cocos/platform/ios/Simulation",
 				);
 				INFOPLIST_FILE = ios/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				LIBRARY_SEARCH_PATHS = " /Applications/Cocos/frameworks/cocos2d-x/prebuilt/ios";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -613,6 +614,8 @@
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				CLANG_CXX_LIBRARY = "libc++";
+				CODE_SIGN_IDENTITY = "iPhone Developer: xiaochuan zhou (63ZHPEL54J)";
+				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Developer: xiaochuan zhou (63ZHPEL54J)";
 				COPY_PHASE_STRIP = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -632,9 +635,12 @@
 					"/Applications/Cocos/frameworks/cocos2d-x/external",
 					"/Applications/Cocos/frameworks/cocos2d-x/external/chipmunk/include/chipmunk",
 				);
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "0BFC47BE-63F5-4CB6-BCEE-A4942505E82A";
+				"PROVISIONING_PROFILE[sdk=*]" = "0BFC47BE-63F5-4CB6-BCEE-A4942505E82A";
 				SDKROOT = macosx;
 			};
 			name = Debug;
@@ -644,6 +650,8 @@
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				CLANG_CXX_LIBRARY = "libc++";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: AVCON Information Technology Co., Ltd.";
+				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Distribution: AVCON Information Technology Co., Ltd.";
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = (
@@ -661,9 +669,12 @@
 					"/Applications/Cocos/frameworks/cocos2d-x/external",
 					"/Applications/Cocos/frameworks/cocos2d-x/external/chipmunk/include/chipmunk",
 				);
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "D6F77A7A-9017-466C-96F7-EEA70DA9EC96";
+				"PROVISIONING_PROFILE[sdk=*]" = "D6F77A7A-9017-466C-96F7-EEA70DA9EC96";
 				SDKROOT = macosx;
 				VALIDATE_PRODUCT = YES;
 			};

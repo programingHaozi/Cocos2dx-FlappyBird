@@ -46,9 +46,11 @@ bool HelloWorld::init()
 }
 
 
+
 void HelloWorld::startGame(float dt){
     scheduleUpdate();
     schedule(schedule_selector(HelloWorld::addBars), 1);
+    
 }
 
 void HelloWorld::stopGame(){
@@ -67,7 +69,19 @@ void HelloWorld::initWorld(){
 void HelloWorld::BeginContact(b2Contact *contact){
     if (contact->GetFixtureA()->GetBody()->GetUserData() == bird||contact->GetFixtureB()->GetBody()->GetUserData() == bird) {
         stopGame();
-        MessageBox("游戏失败", "游戏失败");
+        auto rePlayLabel = Label::createWithSystemFont("重新开始", "Courier", 40);
+        rePlayLabel ->setTextColor(Color4B::BLUE);
+        rePlayLabel ->setPosition(visibleSize.width/2, visibleSize.height/2);
+        addChild(rePlayLabel);
+        
+        auto clickListener = EventListenerTouchOneByOne::create();
+        clickListener ->onTouchBegan = [rePlayLabel](Touch *t,Event *e){
+            if (rePlayLabel ->getBoundingBox().containsPoint(t ->getLocation())) {
+                 Director::getInstance()->replaceScene(TransitionFadeBL::create(0, HelloWorld::createScene()));
+            }
+            return false;
+        };
+        Director::getInstance()->getEventDispatcher()->addEventListenerWithSceneGraphPriority(clickListener, rePlayLabel);
         
     }
 }
